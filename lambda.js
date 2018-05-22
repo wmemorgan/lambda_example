@@ -29,7 +29,7 @@ exports.rss = function(event, context, callback) {
 
                 var content = "\n\nAWS EC2 us-east-1\n";
                 content = content + "-----------------\n";
-                content = content + result.rss.channel[0].item[0].title[0]._ + "\n";
+                content = content + result.rss.channel[0].item[0].title[0] + "\n";
 
                 console.log(content);
 
