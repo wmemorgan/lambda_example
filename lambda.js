@@ -35,7 +35,7 @@ exports.rss = function(event, context, callback) {
 
                 // This will be used for when we hook up API Gateway.
                 // It does no harm just being here for the Lambda only tutorial.
-                context.done(null, { message : result.rss.channel[0].item[0].title[0]._ });
+                context.done(null, { message : result.rss.channel[0].item[0].title[0] });
 
                 return;
             });
